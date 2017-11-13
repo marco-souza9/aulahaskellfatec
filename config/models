@@ -1,0 +1,16 @@
+Produto json
+    nome     Text
+    preco    Double
+    estoque  Int
+    deriving Show
+
+Compra json
+    cliid    ClienteId
+    proid    ProdutoId
+    comprado Int
+
+Cliente json
+    nome     Text
+    cpf      Text
+    email    Text
+    UniqueEmail email 

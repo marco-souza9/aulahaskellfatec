@@ -1,0 +1,28 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/produto/inserir                   ProdutoR      POST
+/produto/apagar/#ProdutoId         ProdutoDelR   DELETE
+/produto/buscar/#ProdutoId         BuscaProdR    GET
+/produto/alterar/#ProdutoId        AlteraProdR   PUT
+/produto/alterar/nome/#ProdutoId   AlteraNomeR   PATCH
+/produto/listar/#Int/menorestoque  MenorEstoqueR GET
+
+/cliente/inserir                   ClienteR      POST
+/cliente/buscar/#ClienteId         BuscaCliR     GET
+/cliente/buscar/#Text/email        EmailCLiR     GET
+
+/compra/inserir                    CompraR       POST
+/compra/#ClienteId/listar          ListaProdR    GET
+/compra/#ClienteId/listarf         ListaProdFR   GET
+/                                  HomeR       GET
+/pag1                              Pag1R       GET
+/pag2                              Pag2R       GET
+/pag3                              Pag3R       GET
+add/#Int/#Int                      AddR        GET
+/tail/#Text                          TailR          GET
+/exemplo                            ExemploR    GET
+/listar                              ListR          GET
+
