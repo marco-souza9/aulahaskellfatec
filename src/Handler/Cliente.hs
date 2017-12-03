@@ -9,7 +9,7 @@ import Import
 
 import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
-
+{--
 postClienteR :: Handler TypedContent
 postClienteR = do
     cli <- requireJsonBody :: Handler Cliente
@@ -27,3 +27,4 @@ getEmailCLiR email = do
     case talvezCliente of
         Nothing -> sendStatusJSON notFound404 (object ["resp" .= ("ERRO " ++ show email ++ " NAO ENCONTRADO")])
         Just cliente  -> sendStatusJSON ok200 (object ["resp" .= (toJSON cliente)])
+--}

@@ -14,11 +14,18 @@
 
 /produto/cadastro                    CadProdutoR    GET POST
 /produto/#ProdutoId/detalhes         DetalheProdR   GET
-/produto/todos                       TodosProdR     GET
-/produto/#ProdutoId/Apagar           ApagarProdR    POST
 
+/produto/inserir                     ProdutoR       POST
+/produto/apagar/#ProdutoId           ProdutoDelR    DELETE
+/produto/buscar/#ProdutoId           BuscaProdR     GET
+/produto/alterar/#ProdutoId          AlteraProdR    PUT
+/produto/alterar/nome/#ProdutoId     AlteraNomeR    PATCH
+/produto/listar/#Int/menorestoque    MenorEstoqueR  GET
+
+/cliente/inserir                     ClienteR       POST
+/cliente/buscar/#ClienteId           BuscaCliR      GET
+/cliente/buscar/#Text/email          EmailCliR      GET
 
 /compra/inserir                      CompraR        POST
 /compra/#ClienteId/listar            ListaProdR     GET
 /compra/#ClienteId/listarf           ListaProdFR    GET
-
