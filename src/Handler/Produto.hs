@@ -41,7 +41,7 @@ deleteProdutoDelR pid = do
     _ <- runDB $ get404 pid
     runDB $ delete pid
     sendStatusJSON noContent204 (object ["resp" .= ("DELETED " ++ show (fromSqlKey pid))])
-
+ 
 postProdutoR :: Handler Value
 postProdutoR = do
     prod <- requireJsonBody :: Handler Produto
